@@ -7,8 +7,8 @@ import './config/rem'
 
 Vue.use(VueRouter)
 const router = new VueRouter({
-	routes,
-	mode: routerMode,
+	routes, //路由定义
+	mode: routerMode, //路由模式：hash、history
 	strict: process.env.NODE_ENV !== 'production',
 	scrollBehavior (to, from, savedPosition) {
 	    if (savedPosition) {
@@ -23,7 +23,7 @@ const router = new VueRouter({
 })
 
 new Vue({
-	router,
+	router,//路由挂载
 	store,
 }).$mount('#app')
 

@@ -65,7 +65,7 @@ export default [{
         },
         //当前选择城市页
         {
-            path: '/city/:cityid',
+            path: '/city/:cityid', //动态路由匹配,根据cityid渲染同一个不同参数的组件
             component: city
         },
         //所有商铺列表页
