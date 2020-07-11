@@ -92,7 +92,9 @@ export default {
     methods:{
         //点击图标刷新页面
         reload(){
-            window.location.reload();
+            //window.location.reload(); location是最有用的BOM对象之一，属性：hash\host\hostname等
+            document.location.reload();
+            console.log(document.location.href);
         }
     },
 }
